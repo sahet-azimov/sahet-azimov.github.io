@@ -3,122 +3,73 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Portfolio</title>
+  <title>Sahet Azimov — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="wrap">
-    <nav class="nav">
-      <div class="brand">Your Name</div>
-      <div class="links">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
 
-    <section class="hero">
-      <h1>Mechanical Engineering student building engineering tools.</h1>
-      <p class="sub">
-        I build small, practical engineering apps (beam analysis, calculators) and share them as interactive demos.
+<header class="container">
+  <nav class="nav">
+    <div class="logo">Sahet Azimov</div>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Engineering Projects & Interactive Tools</h1>
+    <p>
+      A collection of practical engineering applications and technical projects.
+    </p>
+    <a class="btn" href="#projects">View Projects</a>
+  </section>
+</header>
+
+<main class="container">
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Beam Load Analysis</h3>
+      <p>
+        Calculates support reactions and visualizes shear force and bending moment diagrams.
       </p>
-      <div class="cta">
-        <a class="btn" href="#projects">View Projects</a>
-        <a class="btn ghost" href="#contact">Contact</a>
-      </div>
+      <a class="btn small" href="#">Live Demo</a>
+    </div>
 
-      <div class="meta">
-        <span> Ankara, Türkiye</span>
-        <span> Python • JavaScript • CAD</span>
-      </div>
-    </section>
-  </header>
+    <div class="card">
+      <h3>AutoCAD Technical Drawings</h3>
+      <p>
+        Selected engineering drawings including projections, sections, and dimensioning.
+      </p>
+      <a class="btn small ghost" href="#">View</a>
+    </div>
 
-  <main class="wrap">
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="grid">
+    <div class="card">
+      <h3>Engineering Mini Tools</h3>
+      <p>
+        Small utilities designed for fast calculations and quick engineering checks.
+      </p>
+      <a class="btn small ghost" href="#">Open</a>
+    </div>
 
-        <article class="card">
-          <h3>Beam Load Analysis (Demo)</h3>
-          <p>
-            Calculates support reactions and visualizes shear force and bending moment diagrams for a simply supported beam.
-          </p>
-          <div class="tags">
-            <span>JavaScript</span><span>Mechanics</span><span>Visualization</span>
-          </div>
-          <div class="actions">
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">Live Demo</a>
-            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-        </article>
+  </div>
+</section>
 
-        <article class="card">
-          <h3>AutoCAD Portfolio</h3>
-          <p>
-            Technical drawings and CAD work (sections, projections, dimensioning) with selected examples.
-          </p>
-          <div class="tags">
-            <span>AutoCAD</span><span>Technical Drawing</span>
-          </div>
-          <div class="actions">
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">View</a>
-          </div>
-        </article>
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+</section>
 
-        <article class="card">
-          <h3>Engineering Mini Tools</h3>
-          <p>
-            A collection of small calculators (unit conversion, materials, quick checks) aimed at students.
-          </p>
-          <div class="tags">
-            <span>Web</span><span>Student Tools</span>
-          </div>
-          <div class="actions">
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">Open</a>
-          </div>
-        </article>
+<footer class="footer">
+  © 2026 Sahet Azimov
+</footer>
 
-      </div>
-    </section>
+</main>
 
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="list">
-        <div class="item"><b>Programming:</b> Python, JavaScript, basic data visualization</div>
-        <div class="item"><b>Engineering:</b> Statics, Mechanics, basic Strength of Materials</div>
-        <div class="item"><b>Tools:</b> AutoCAD, Git/GitHub</div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <div class="list">
-        <div class="item">
-          <b>Ankara Yıldırım Beyazıt University (AYBU)</b> — Mechanical Engineering (BSc)
-          <div class="muted">First-year student</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p class="muted">Add your email and links below.</p>
-      <div class="contact">
-        <a class="btn small" href="mailto:youremail@example.com">Email</a>
-        <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span class="muted">© <span id="y"></span> Your Name</span>
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
