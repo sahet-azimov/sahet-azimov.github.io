@@ -4,72 +4,161 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sahet Azimov — Portfolio</title>
+  <meta name="description" content="Portfolio of engineering projects and interactive demos." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="shell">
+    <nav class="nav">
+      <a class="brand" href="#">Sahet Azimov</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="pill">Contact</a>
+      </div>
+    </nav>
 
-<header class="container">
-  <nav class="nav">
-    <div class="logo">Sahet Azimov</div>
-    <div class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    <section class="hero">
+      <div class="hero-left">
+        <span class="kicker">Portfolio</span>
+        <h1>Projects and interactive tools, crafted for clarity.</h1>
+        <p class="lead">
+          I build practical web demos and engineering utilities—simple, readable, and easy to try.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
 
-  <section class="hero">
-    <h1>Engineering Projects & Interactive Tools</h1>
-    <p>
-      A collection of practical engineering applications and technical projects.
-    </p>
-    <a class="btn" href="#projects">View Projects</a>
-  </section>
-</header>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">CAD</span>
+        </div>
+      </div>
 
-<main class="container">
+      <div class="hero-right">
+        <div class="stat">
+          <div class="stat-title">Focus</div>
+          <div class="stat-value">Engineering demos</div>
+          <div class="stat-sub">Clean UI • Clear results</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Output</div>
+          <div class="stat-value">Web tools</div>
+          <div class="stat-sub">Fast, shareable, clickable</div>
+        </div>
+      </div>
+    </section>
+  </header>
 
-<section id="projects" class="section">
-  <h2>Projects</h2>
+  <main class="shell">
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="muted">Clickable demos and technical work.</p>
+      </div>
 
-  <div class="cards">
+      <div class="grid">
+        <article class="card">
+          <div class="card-top">
+            <h3>Beam Load Analysis</h3>
+            <span class="badge">Demo</span>
+          </div>
+          <p class="card-text">
+            Calculates support reactions and visualizes shear force and bending moment diagrams.
+          </p>
+          <div class="tagrow">
+            <span class="tag">Mechanics</span>
+            <span class="tag">Visualization</span>
+            <span class="tag">Web</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Live demo</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
 
-    <div class="card">
-      <h3>Beam Load Analysis</h3>
-      <p>
-        Calculates support reactions and visualizes shear force and bending moment diagrams.
-      </p>
-      <a class="btn small" href="#">Live Demo</a>
-    </div>
+        <article class="card">
+          <div class="card-top">
+            <h3>AutoCAD Technical Drawings</h3>
+            <span class="badge subtle">Gallery</span>
+          </div>
+          <p class="card-text">
+            Selected engineering drawings: projections, sections, dimensioning, and clean layouts.
+          </p>
+          <div class="tagrow">
+            <span class="tag">AutoCAD</span>
+            <span class="tag">Drafting</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">View</a>
+          </div>
+        </article>
 
-    <div class="card">
-      <h3>AutoCAD Technical Drawings</h3>
-      <p>
-        Selected engineering drawings including projections, sections, and dimensioning.
-      </p>
-      <a class="btn small ghost" href="#">View</a>
-    </div>
+        <article class="card">
+          <div class="card-top">
+            <h3>Engineering Mini Tools</h3>
+            <span class="badge subtle">Collection</span>
+          </div>
+          <p class="card-text">
+            A growing set of small calculators for quick checks and fast problem-solving.
+          </p>
+          <div class="tagrow">
+            <span class="tag">Utilities</span>
+            <span class="tag">Web</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Open</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Engineering Mini Tools</h3>
-      <p>
-        Small utilities designed for fast calculations and quick engineering checks.
-      </p>
-      <a class="btn small ghost" href="#">Open</a>
-    </div>
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="muted">Short and to the point.</p>
+      </div>
 
-  </div>
-</section>
+      <div class="about">
+        <p>
+          I enjoy building clean, user-friendly tools that make technical ideas easy to explore.
+          This page collects my projects and interactive demos.
+        </p>
+        <div class="about-cards">
+          <div class="mini">
+            <div class="mini-title">What I value</div>
+            <div class="mini-text">Clarity, simplicity, and real working demos.</div>
+          </div>
+          <div class="mini">
+            <div class="mini-title">What you can expect</div>
+            <div class="mini-text">Fast pages, readable results, and consistent design.</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
-</section>
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Add your real links here.</p>
+      </div>
 
-<footer class="footer">
-  © 2026 Sahet Azimov
-</footer>
+      <div class="contact">
+        <a class="btn" href="mailto:you@example.com">Email</a>
+        <a class="btn ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn ghost" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
 
-</main>
+    <footer class="footer">
+      <span>© <span id="y"></span> Sahet Azimov</span>
+    </footer>
+  </main>
 
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
