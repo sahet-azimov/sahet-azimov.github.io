@@ -4,202 +4,121 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sahet Azimov — Portfolio</title>
-  <meta name="description" content="Modern portfolio: engineering projects and interactive web tools." />
+  <meta name="description" content="Personal portfolio: projects and contact." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg">
-    <div class="blob b1"></div>
-    <div class="blob b2"></div>
-    <div class="grain"></div>
-  </div>
-
-  <header class="wrap">
-    <nav class="nav">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand-dot"></span>
-        <span>Sahet Azimov</span>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark"></span>
+        <span class="brand-name">Sahet Azimov</span>
+        <span class="brand-role">/ Portfolio</span>
       </a>
 
-      <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </div>
-    </nav>
-
-    <section id="top" class="hero">
-      <div class="hero-left">
-        <div class="pill">Portfolio • Interactive demos</div>
-        <h1>Clean, modern engineering tools — built to be tried.</h1>
-        <p class="lead">
-          This page collects my practical web demos and technical projects. Fast to open, easy to understand, and clickable.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn" href="#projects">Explore projects</a>
-          <a class="btn ghost" href="#contact">Get in touch</a>
-        </div>
-
-        <div class="meta">
-          <div class="meta-item">
-            <span class="k">Focus</span>
-            <span class="v">Web tools & demos</span>
-          </div>
-          <div class="meta-item">
-            <span class="k">Stack</span>
-            <span class="v">Python • JavaScript • CAD</span>
-          </div>
-          <div class="meta-item">
-            <span class="k">Style</span>
-            <span class="v">Minimal UI • Clear results</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div class="showcase">
-          <div class="showcase-top">
-            <span class="chip">Featured</span>
-            <span class="chip ghost">New</span>
-          </div>
-          <div class="showcase-title">Beam Load Analysis</div>
-          <div class="showcase-text">
-            Reactions + shear & bending moment diagrams in a simple, interactive interface.
-          </div>
-
-          <div class="showcase-actions">
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">Live demo</a>
-            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Code</a>
-          </div>
-
-          <div class="mini-row">
-            <div class="mini">
-              <div class="mini-k">Outputs</div>
-              <div class="mini-v">V(x), M(x)</div>
-            </div>
-            <div class="mini">
-              <div class="mini-k">Input</div>
-              <div class="mini-v">Loads & supports</div>
-            </div>
-            <div class="mini">
-              <div class="mini-k">Goal</div>
-              <div class="mini-v">Clarity</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <nav class="nav">
+        <a href="#about">ABOUT</a>
+        <a href="#resume">RESUME</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap">
-    <section id="projects" class="section">
-      <div class="section-head">
-        <div>
-          <h2>Projects</h2>
-          <p class="muted">A focused set of demos and technical work.</p>
-        </div>
+  <main id="top" class="container hero">
+    <!-- Left card -->
+    <section class="profile-card">
+      <div class="avatar-wrap">
+        <!-- Put your photo into /assets/avatar.jpg and change src -->
+        <img class="avatar" src="assets/avatar.jpg" alt="Profile photo" onerror="this.style.display='none'; this.parentElement.classList.add('noimg');" />
+        <div class="avatar-fallback" aria-hidden="true"></div>
       </div>
 
-      <div class="grid">
-        <article class="card">
-          <div class="card-head">
-            <h3>Beam Load Analysis</h3>
-            <span class="badge">Demo</span>
-          </div>
-          <p class="card-text">
-            Calculates reactions and visualizes shear force and bending moment diagrams.
-          </p>
-          <div class="tags">
-            <span>Mechanics</span><span>Visualization</span><span>Web</span>
-          </div>
-          <div class="actions">
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">Live demo</a>
-            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Code</a>
-          </div>
-        </article>
+      <h2 class="name">Sahet<br/>Azimov</h2>
+      <div class="divider"></div>
+      <p class="role">ENGINEERING PROJECTS</p>
 
-        <article class="card">
-          <div class="card-head">
-            <h3>AutoCAD Technical Drawings</h3>
-            <span class="badge subtle">Gallery</span>
-          </div>
-          <p class="card-text">
-            Selected drawings: projections, sections, dimensioning, and clean layouts.
-          </p>
-          <div class="tags">
-            <span>AutoCAD</span><span>Drafting</span><span>Documentation</span>
-          </div>
-          <div class="actions">
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">View</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-head">
-            <h3>Engineering Mini Tools</h3>
-            <span class="badge subtle">Collection</span>
-          </div>
-          <p class="card-text">
-            Small utilities for quick checks and fast problem-solving.
-          </p>
-          <div class="tags">
-            <span>Utilities</span><span>Web</span><span>Productivity</span>
-          </div>
-          <div class="actions">
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">Open</a>
-          </div>
-        </article>
+      <div class="social">
+        <!-- replace with real links -->
+        <a href="#" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="mailto:you@example.com" aria-label="Email">@</a>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="section-head">
-        <div>
-          <h2>About</h2>
-          <p class="muted">Short, clear, and professional.</p>
-        </div>
+    <!-- Right content -->
+    <section class="hero-copy">
+      <h1 class="hello">Hello</h1>
+      <p class="subtitle">Here’s who I am & what I do</p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="#resume">RESUME</a>
+        <a class="btn outline" href="#projects">PROJECTS</a>
       </div>
 
-      <div class="about">
-        <div class="about-left">
-          <p>
-            I build clean, user-friendly tools that make technical ideas easy to explore.
-            My goal is simple: make projects that are understandable in seconds and useful in practice.
-          </p>
-        </div>
-        <div class="about-right">
-          <div class="info">
-            <div class="info-k">What you’ll see here</div>
-            <div class="info-v">Clickable demos, neat UI, clear results.</div>
-          </div>
-          <div class="info">
-            <div class="info-k">How it’s built</div>
-            <div class="info-v">Modern web stack + careful engineering logic.</div>
-          </div>
-        </div>
+      <div class="text">
+        <p>
+          I build practical tools and interactive demos. The focus is clarity: clean interface, readable outputs,
+          and projects you can try immediately.
+        </p>
+        <p>
+          Use the buttons above to jump to projects or contact. (You can replace this text with anything later.)
+        </p>
       </div>
     </section>
-
-    <section id="contact" class="section">
-      <div class="section-head">
-        <div>
-          <h2>Contact</h2>
-          <p class="muted">Replace placeholders with your real links.</p>
-        </div>
-      </div>
-
-      <div class="contact">
-        <a class="btn" href="mailto:you@example.com">Email</a>
-        <a class="btn ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn ghost" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© <span id="y"></span> Sahet Azimov</span>
-    </footer>
   </main>
+
+  <!-- Sections (simple placeholders) -->
+  <section id="about" class="section container">
+    <h3>About</h3>
+    <p>Short, professional summary. (No “student” wording unless you want it.)</p>
+  </section>
+
+  <section id="resume" class="section container">
+    <h3>Resume</h3>
+    <p>Add bullets: skills, highlights, certifications, languages, etc.</p>
+  </section>
+
+  <section id="projects" class="section container">
+    <h3>Projects</h3>
+    <div class="projects-grid">
+      <article class="proj">
+        <h4>Beam Load Analysis</h4>
+        <p>Reactions + shear and bending moment diagrams.</p>
+        <div class="proj-links">
+          <a class="link" href="#">Live demo</a>
+          <a class="link" href="#">Code</a>
+        </div>
+      </article>
+
+      <article class="proj">
+        <h4>AutoCAD Technical Drawings</h4>
+        <p>Projections, sections, dimensioning, clean layouts.</p>
+        <div class="proj-links">
+          <a class="link" href="#">View</a>
+        </div>
+      </article>
+
+      <article class="proj">
+        <h4>Engineering Mini Tools</h4>
+        <p>Small calculators for quick checks.</p>
+        <div class="proj-links">
+          <a class="link" href="#">Open</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section container">
+    <h3>Contact</h3>
+    <p>Email: <a class="link" href="mailto:you@example.com">you@example.com</a></p>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="y"></span> Sahet Azimov</span>
+    </div>
+  </footer>
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
